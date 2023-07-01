@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/subster/static/js/main.7ccea81d.js",
+    "index.html": "/subster/index.html",
+    "main.7ccea81d.js.map": "/subster/static/js/main.7ccea81d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7ccea81d.js"
+  ]
+}
