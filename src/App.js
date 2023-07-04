@@ -18,21 +18,21 @@ const itemData={
 	 {
   "class": "남성 생활 용품",
   "name": "와이즐리",
-  "price": "x",
+  "price": "0",
   "img": "wisely",
   "link": "http:\/\/wisely.wiselycompany.com\/product\/list.html?cate_no=100"
  },
  {
   "class": "면도기 정기 배송",
   "name": "레이지 소사이어티",
-  "price": "x",
+  "price": "0",
   "img": "lazysociety",
   "link": "https:\/\/lazysociety.co.kr\/"
  },
  {
   "class": "여성용품 정기 배송",
   "name": "해피문데이",
-  "price": "x",
+  "price": "0",
   "img": "happymoonday",
   "link": "https:\/\/happymoonday.com\/"
  },
@@ -88,7 +88,7 @@ const itemData={
  {
   "class": "영양제 정기 구독",
   "name": "필리",
-  "price": "x",
+  "price": "0",
   "img": "pilly",
   "link": "https:\/\/pilly.kr\/store\/hotdeal\/all"
  },
@@ -116,7 +116,7 @@ const itemData={
  {
   "class": "가구 구독",
   "name": "살구",
-  "price": "x",
+  "price": "0",
   "img": "thesalgu",
   "link": "https:\/\/thesalgu.com\/shop\/product-shop?mainCategoryName=%EC%86%8C%ED%8C%8C&sorting=%EC%9D%B8%EA%B8%B0%EC%88%9C"
  },
@@ -137,28 +137,28 @@ const itemData={
  {
   "class": "중고차 정기 구독",
   "name": "트라이브",
-  "price": "x",
+  "price": "0",
   "img": "thetrive",
   "link": "https:\/\/thetrive.com\/"
  },
  {
   "class": "물품 정기배송",
   "name": "이마트몰",
-  "price": "x",
+  "price": "0",
   "img": "emart",
   "link": "https:\/\/emart.ssg.com\/service\/emart\/dvstore.ssg"
  },
  {
   "class": "자동차 구독",
   "name": "현대 셀렉션",
-  "price": "x",
+  "price": "0",
   "img": "hyundai",
   "link": "https:\/\/www.hyundai.com\/kr\/ko\/digital-customer-support\/app\/hyundai-selection\/hyundai-selection-information"
  },
  {
   "class": "자동차 구독",
   "name": "기아 플렉스",
-  "price": "x",
+  "price": "0",
   "img": "kia",
   "link": "https:\/\/www.kia.com\/kr\/buy\/rent-used-car\/flex"
  },
@@ -302,14 +302,14 @@ const itemData={
  {
   "class": "뉴스 구독 상품",
   "name": "뉴닉",
-  "price": "x",
+  "price": "0",
   "img": "newneek",
   "link": "https:\/\/newneek.co\/"
  },
  {
   "class": "뉴스 구독 상품",
   "name": "머니레터",
-  "price": "x",
+  "price": "0",
   "img": "uppity",
   "link": "https:\/\/uppity.co.kr\/"
  },
@@ -418,7 +418,7 @@ const itemData={
  {
   "class": "사무실 스낵 정기 배송",
   "name": "스낵24",
-  "price": "x",
+  "price": "0",
   "img": "snack24",
   "link": "https:\/\/www.wefuncorp.com\/snack"
  },
@@ -446,7 +446,7 @@ const itemData={
  {
   "class": "샐러드 정기 배송",
   "name": "프레시코드",
-  "price": "x",
+  "price": "0",
   "img": "freshcode",
   "link": "https:\/\/freshcode.me\/subscription\/index.html"
  },
@@ -460,7 +460,7 @@ const itemData={
  {
   "class": "원두 정기 배송",
   "name": "원두데일리",
-  "price": "x",
+  "price": "0",
   "img": "onedodaily",
   "link": "https:\/\/www.onedodaily.kr\/"
  },
@@ -474,14 +474,14 @@ const itemData={
  {
   "class": "원두 정기 배송",
   "name": "빈브라더스",
-  "price": "x",
+  "price": "0",
   "img": "beanbrothers",
   "link": "https:\/\/beanbrothers.co.kr\/goods\/goods_list.php?cateCd=001"
  },
  {
   "class": "제주 특산품 정기 배송",
   "name": "아일랜드박스",
-  "price": "x",
+  "price": "0",
   "img": "iboxjeju",
   "link": "https:\/\/www.iboxjeju.com\/products#annual-product-section"
  },
@@ -495,7 +495,7 @@ const itemData={
  {
   "class": "막걸리 정기 배송",
   "name": "홈술닷컴",
-  "price": "x",
+  "price": "0",
   "img": "homesool",
   "link": "https:\/\/homesool.com\/goods\/hs_subscribe.php"
  },
@@ -516,7 +516,7 @@ const itemData={
  {
   "class": "유제품, 샐러드 정기 배송",
   "name": "프레딧",
-  "price": "x",
+  "price": "0",
   "img": "fredit",
   "link": "https:\/\/m.fredit.co.kr\/exhibition\/fredit\/event-fredit-main-detail?bbmId=1000008955"
  },
