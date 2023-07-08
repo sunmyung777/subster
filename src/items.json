@@ -1,516 +1,588 @@
 {
- "life":[
-	 {
-  "class": "남성 생활 용품",
+	"life":[
+	{
+  "id": 1,
+  "className": "남성 생활 용품",
   "name": "와이즐리",
   "price": "x",
-  "img": "wisely",
+  "img": "\/img\/items\/wisely.png",
   "link": "http:\/\/wisely.wiselycompany.com\/product\/list.html?cate_no=100"
  },
  {
-  "class": "면도기 정기 배송",
+  "id": 2,
+  "className": "면도기 정기 배송",
   "name": "레이지 소사이어티",
   "price": "x",
-  "img": "lazysociety",
+  "img": "\/img\/items\/lazysociety.png",
   "link": "https:\/\/lazysociety.co.kr\/"
  },
  {
-  "class": "여성용품 정기 배송",
+  "id": 3,
+  "className": "여성용품 정기 배송",
   "name": "해피문데이",
   "price": "x",
-  "img": "happymoonday",
+  "img": "\/img\/items\/happymoonday.png",
   "link": "https:\/\/happymoonday.com\/"
  },
  {
-  "class": "의류 대여",
+  "id": 4,
+  "className": "의류 대여",
   "name": "클로젯셰어",
   "price": 30000,
-  "img": "closetshare",
+  "img": "\/img\/items\/closetshare.png",
   "link": "https:\/\/www.closetshare.com\/theclozet\/front\/membership\/membershipList"
  },
  {
-  "class": "빨래 대행 서비스",
+  "id": 5,
+  "className": "빨래 대행 서비스",
   "name": "런드리고",
   "price": 64200,
-  "img": "laundrygo",
+  "img": "\/img\/items\/laundrygo.png",
   "link": "https:\/\/play.google.com\/store\/apps\/details?id=com.laundrygo.android&hl=ko&gl=US&pli=1"
  },
  {
-  "class": "청소 대행",
+  "id": 6,
+  "className": "청소 대행",
   "name": "청소연구소",
   "price": 46200,
-  "img": "cleaninglab",
+  "img": "\/img\/items\/cleaninglab.png",
   "link": "https:\/\/www.cleaninglab.co.kr\/home_clean"
  },
  {
-  "class": "꽃 구독",
+  "id": 7,
+  "className": "꽃 구독",
   "name": "꾸까",
   "price": 17000,
-  "img": "kukka",
+  "img": "\/img\/items\/kukka.png",
   "link": "https:\/\/kukka.kr\/subscription\/lineup\/?link=intro"
  },
  {
-  "class": "양말 구독",
+  "id": 8,
+  "className": "양말 구독",
   "name": "미하이삭스",
   "price": 6900,
-  "img": "mehisox",
+  "img": "\/img\/items\/mehisox.png",
   "link": "https:\/\/www.mehisox.com\/subscription\/"
  },
  {
-  "class": "그림 정기 구독",
+  "id": 9,
+  "className": "그림 정기 구독",
   "name": "핀즐",
   "price": 18900,
-  "img": "pinzle",
+  "img": "\/img\/items\/pinzle.png",
   "link": "https:\/\/m.pinzle.net\/product\/detail.html?product_no=2343&cate_no=83&display_group=1"
  },
  {
-  "class": "그림 렌탈",
+  "id": 10,
+  "className": "그림 렌탈",
   "name": "오픈갤러리",
   "price": 33000,
-  "img": "opengallery",
+  "img": "\/img\/items\/opengallery.png",
   "link": "https:\/\/www.opengallery.co.kr\/rental-service\/"
  },
  {
-  "class": "영양제 정기 구독",
+  "id": 11,
+  "className": "영양제 정기 구독",
   "name": "필리",
   "price": "x",
-  "img": "pilly",
+  "img": "\/img\/items\/pilly.png",
   "link": "https:\/\/pilly.kr\/store\/hotdeal\/all"
  },
  {
-  "class": "반려동물 용품 구독",
+  "id": 12,
+  "className": "반려동물 용품 구독",
   "name": "핏펫",
   "price": 2900,
-  "img": "fitpet",
+  "img": "\/img\/items\/fitpet.png",
   "link": "https:\/\/www.fitpetmall.com\/mall\/membership\/intro?location=gnb_home"
  },
  {
-  "class": "반려동물 용품 구독",
+  "id": 13,
+  "className": "반려동물 용품 구독",
   "name": "베이컨박스",
   "price": 28900,
-  "img": "baconbox",
+  "img": "\/img\/items\/baconbox.png",
   "link": "https:\/\/www.baconbox.co\/box"
  },
  {
-  "class": "화장품 정기 배송",
+  "id": 14,
+  "className": "화장품 정기 배송",
   "name": "톤28",
   "price": 39000,
-  "img": "toun28",
+  "img": "\/img\/items\/toun28.png",
   "link": "https:\/\/www.toun28.com\/subscription"
  },
  {
-  "class": "가구 구독",
+  "id": 15,
+  "className": "가구 구독",
   "name": "살구",
   "price": "x",
-  "img": "thesalgu",
+  "img": "\/img\/items\/thesalgu.png",
   "link": "https:\/\/thesalgu.com\/shop\/product-shop?mainCategoryName=%EC%86%8C%ED%8C%8C&sorting=%EC%9D%B8%EA%B8%B0%EC%88%9C"
  },
  {
-  "class": "수공예품 정기 구독",
+  "id": 16,
+  "className": "수공예품 정기 구독",
   "name": "크래프트링크",
   "price": 20000,
-  "img": "craftlink",
+  "img": "\/img\/items\/craftlink.png",
   "link": "https:\/\/craft-link.co.kr\/subscription"
  },
  {
-  "class": "침구류 정기 배송",
+  "id": 17,
+  "className": "침구류 정기 배송",
   "name": "클린베딩",
   "price": 33000,
-  "img": "cleanbedding",
+  "img": "\/img\/items\/cleanbedding.png",
   "link": "https:\/\/www.cleanbedding.kr\/subscribe"
  },
  {
-  "class": "중고차 정기 구독",
+  "id": 18,
+  "className": "중고차 정기 구독",
   "name": "트라이브",
   "price": "x",
-  "img": "thetrive",
+  "img": "\/img\/items\/thetrive.png",
   "link": "https:\/\/thetrive.com\/"
  },
  {
-  "class": "물품 정기배송",
+  "id": 19,
+  "className": "물품 정기배송",
   "name": "이마트몰",
   "price": "x",
-  "img": "emart",
+  "img": "\/img\/items\/emart.png",
   "link": "https:\/\/emart.ssg.com\/service\/emart\/dvstore.ssg"
  },
  {
-  "class": "자동차 구독",
+  "id": 20,
+  "className": "자동차 구독",
   "name": "현대 셀렉션",
   "price": "x",
-  "img": "hyundai",
+  "img": "\/img\/items\/hyundai.png",
   "link": "https:\/\/www.hyundai.com\/kr\/ko\/digital-customer-support\/app\/hyundai-selection\/hyundai-selection-information"
  },
  {
-  "class": "자동차 구독",
+  "id": 21,
+  "className": "자동차 구독",
   "name": "기아 플렉스",
   "price": "x",
-  "img": "kia",
+  "img": "\/img\/items\/kia.png",
   "link": "https:\/\/www.kia.com\/kr\/buy\/rent-used-car\/flex"
- },
- ],
+ }
+],
  "ott":[
 	 {
-  "class": "ott",
+  "id": 22,
+  "className": "ott",
   "name": "넷플릭스",
   "price": 9500,
-  "img": "netflix",
+  "img": "\/img\/items\/netflix.png",
   "link": "https:\/\/www.netflix.com\/kr\/"
  },
  {
-  "class": "ott",
+  "id": 23,
+  "className": "ott",
   "name": "티빙",
   "price": 7900,
-  "img": "tving",
+  "img": "\/img\/items\/tving.png",
   "link": "https:\/\/www.tving.com\/"
  },
  {
-  "class": "ott",
+  "id": 24,
+  "className": "ott",
   "name": "쿠팡플레이",
   "price": 4990,
-  "img": "coupangplay",
+  "img": "\/img\/items\/coupangplay.png",
   "link": "https:\/\/www.coupangplay.com\/"
  },
  {
-  "class": "ott",
+  "id": 25,
+  "className": "ott",
   "name": "디즈니플러스",
   "price": 9900,
-  "img": "disneyplus",
+  "img": "\/img\/items\/disneyplus.png",
   "link": "https:\/\/www.disneyplus.com\/ko-kr?cid=DSS-Search-Google-71700000088339394-&s_kwcid=AL!8468!3!622932036847!p!!g!!%EB%94%94%EC%A6%88%EB%8B%88%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B0%80%EA%B2%A9&gclid=Cj0KCQjwqNqkBhDlARIsAFaxvwzJYnJopNqeF7VQRADAe8JnITIi2inLgMQSoqgo2I9T2aCTk1uTnb8aAi6-EALw_wcB&gclsrc=aw.ds"
  },
  {
-  "class": "ott",
+  "id": 26,
+  "className": "ott",
   "name": "라프텔",
   "price": 9900,
-  "img": "laftel",
+  "img": "\/img\/items\/laftel.png",
   "link": "https:\/\/laftel.net\/auth\/login?next=\/membership"
  },
  {
-  "class": "ott",
+  "id": 27,
+  "className": "ott",
   "name": "웨이브",
   "price": 7900,
-  "img": "wavve",
+  "img": "\/img\/items\/wavve.png",
   "link": "https:\/\/www.wavve.com\/voucher\/index.html"
  },
  {
-  "class": "ott",
+  "id": 28,
+  "className": "ott",
   "name": "왓챠",
   "price": 7900,
-  "img": "watcha",
+  "img": "\/img\/items\/watcha.png",
   "link": "https:\/\/watcha.com\/"
- },
+ }
  ],
  "book":[
 	 {
-  "class": "전자책",
+  "id": 29,
+  "className": "전자책",
   "name": "리디셀렉트",
   "price": 9900,
-  "img": "ridibooks",
+  "img": "\/img\/items\/ridibooks.png",
   "link": "https:\/\/select.ridibooks.com\/home"
  },
  {
-  "class": "전자책",
+  "id": 30,
+  "className": "전자책",
   "name": "밀리의서재",
   "price": 9900,
-  "img": "millie",
+  "img": "\/img\/items\/millie.png",
   "link": "https:\/\/www.millie.co.kr\/v3\/brand\/update?utm_source=google&utm_medium=cpc&utm_campaign=pc&utm_content=brand&utm_term=%2B%EB%B0%80%EB%A6%AC%EC%9D%98%2B%EC%84%9C%EC%9E%AC%2B&gad=1&gclid=Cj0KCQjwqNqkBhDlARIsAFaxvwwYcl9-7UFg7ApmaKwrQu5WGer6n9A-f4Bh7l_-Pw3CBZAez1z7GYQaAuJhEALw_wcB"
  },
  {
-  "class": "전자책",
+  "id": 31,
+  "className": "전자책",
   "name": "교보 sam",
   "price": 9900,
-  "img": "kyobobook",
+  "img": "\/img\/items\/kyobobook.png",
   "link": "https:\/\/ebook.kyobobook.co.kr\/dig\/sam\/samcnfg?tabType=SAM"
  },
  {
-  "class": "전자책",
+  "id": 32,
+  "className": "전자책",
   "name": "yes24북클럽",
   "price": 5500,
-  "img": "cremaclub",
+  "img": "\/img\/items\/cremaclub.png",
   "link": "https:\/\/cremaclub.yes24.com\/Bookclub\/intro?utm_source=google&utm_medium=display&utm_campaign=20257842423&utm_content=&utm_term=&gclid=Cj0KCQjwqNqkBhDlARIsAFaxvwwvDVDdiksCR3WrByzmGf63wnKazbfI5vNUVLSv11bcAMW6iLg9SC4aAtnhEALw_wcB"
  },
  {
-  "class": "도서 대여, 정기배송",
+  "id": 33,
+  "className": "도서 대여, 정기배송",
   "name": "플라이북",
   "price": 9900,
-  "img": "flybook",
+  "img": "\/img\/items\/flybook.png",
   "link": "https:\/\/www.flybook.kr\/plus"
  },
  {
-  "class": "전문가 리포트 구독",
+  "id": 34,
+  "className": "전문가 리포트 구독",
   "name": "퍼블리",
   "price": 11000,
-  "img": "publy",
+  "img": "\/img\/items\/publy.png",
   "link": "https:\/\/publy.co\/"
  },
  {
-  "class": "뉴스 구독 상품",
+  "id": 35,
+  "className": "뉴스 구독 상품",
   "name": "북저널리즘",
   "price": 7900,
-  "img": "bookjournalism",
+  "img": "\/img\/items\/bookjournalism.png",
   "link": "https:\/\/www.bookjournalism.com\/prime"
  },
  {
-  "class": "IT,테크 뉴스 구독",
+  "id": 36,
+  "className": "IT,테크 뉴스 구독",
   "name": "아웃스탠딩",
   "price": 11900,
-  "img": "outstanding",
+  "img": "\/img\/items\/outstanding.png",
   "link": "https:\/\/outstanding.kr\/premium-membership"
  },
  {
-  "class": "오디오북",
+  "id": 37,
+  "className": "오디오북",
   "name": "윌라",
   "price": 9900,
-  "img": "welaaa",
+  "img": "\/img\/items\/welaaa.png",
   "link": "https:\/\/www.welaaa.com\/membership"
  },
  {
-  "class": "자체 뉴스 구독 상품",
+  "id": 38,
+  "className": "자체 뉴스 구독 상품",
   "name": "폴인",
   "price": 7800,
-  "img": "folin",
+  "img": "\/img\/items\/folin.png",
   "link": "https:\/\/www.folin.co\/membership"
  },
  {
-  "class": "에세이 구독",
+  "id": 39,
+  "className": "에세이 구독",
   "name": "북크루",
   "price": 0,
-  "img": "bookcrew",
+  "img": "\/img\/items\/bookcrew.png",
   "link": "https:\/\/www.bookcrew.net\/shelleyBooks"
  },
  {
-  "class": "에세이 구독",
+  "id": 40,
+  "className": "에세이 구독",
   "name": "일간이슬아",
   "price": 0,
-  "img": "sullalee",
+  "img": "\/img\/items\/sullalee.png",
   "link": "https:\/\/www.sullalee.com\/dailee-sulla"
  },
  {
-  "class": "뉴스 구독 상품",
+  "id": 41,
+  "className": "뉴스 구독 상품",
   "name": "뉴닉",
   "price": "x",
-  "img": "newneek",
+  "img": "\/img\/items\/newneek.png",
   "link": "https:\/\/newneek.co\/"
  },
  {
-  "class": "뉴스 구독 상품",
+  "id": 42,
+  "className": "뉴스 구독 상품",
   "name": "머니레터",
   "price": "x",
-  "img": "uppity",
+  "img": "\/img\/items\/uppity.png",
   "link": "https:\/\/uppity.co.kr\/"
  },
  {
-  "class": "뉴스 구독 상품",
+  "id": 43,
+  "className": "뉴스 구독 상품",
   "name": "캐릿",
   "price": 5500,
-  "img": "careet",
+  "img": "\/img\/items\/careet.png",
   "link": "https:\/\/www.careet.net\/Subscribe"
  },
  {
-  "class": "도서 추천",
+  "id": 44,
+  "className": "도서 추천",
   "name": "에그브렉",
   "price": 0,
-  "img": "eggbreak",
+  "img": "\/img\/items\/eggbreak.png",
   "link": "https:\/\/page.stibee.com\/subscriptions\/61665"
  },
  {
-  "class": "뉴스 구독 상품",
+  "id": 45,
+  "className": "뉴스 구독 상품",
   "name": "미라클레터",
   "price": 0,
-  "img": "mirakleletter",
+  "img": "\/img\/items\/mirakleletter.png",
   "link": "https:\/\/page.stibee.com\/subscriptions\/33271"
  },
  {
-  "class": "뉴스 구독 상품",
+  "id": 46,
+  "className": "뉴스 구독 상품",
   "name": "더밀크",
   "price": 0,
-  "img": "themilk",
+  "img": "\/img\/items\/themilk.png",
   "link": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLScOAY62JVZMdZ1GEEA6jbfqHKG8k3kiAtI4-brIBE-dBc1wiQ\/viewform"
- },
-],
+ }
+ ],
  "others":[
 	 {
-  "class": "음악 스트리밍",
+  "id": 47,
+  "className": "음악 스트리밍",
   "name": "멜론",
   "price": 7900,
-  "img": "melon",
+  "img": "\/img\/items\/melon.png",
   "link": "https:\/\/www.melon.com\/buy\/pamphlet\/all.htm"
  },
  {
-  "class": "음악 스트리밍",
+  "id": 48,
+  "className": "음악 스트리밍",
   "name": "바이브",
   "price": 7200,
-  "img": "vibe",
+  "img": "\/img\/items\/vibe.png",
   "link": "https:\/\/vibe.naver.com\/membership\/vibe?utm_source=vibeweb&utm_medium=gnb_membershipsubscription&utm_campaign=membership_click_tracking"
  },
  {
-  "class": "음악 스트리밍",
+  "id": 49,
+  "className": "음악 스트리밍",
   "name": "지니",
   "price": 8400,
-  "img": "genie",
+  "img": "\/img\/items\/genie.png",
   "link": "https:\/\/pay.genie.co.kr\/product\/productMain"
  },
  {
-  "class": "음악 스트리밍",
+  "id": 50,
+  "className": "음악 스트리밍",
   "name": "벅스",
   "price": 7900,
-  "img": "bugs",
+  "img": "\/img\/items\/bugs.png",
   "link": "https:\/\/music.bugs.co.kr\/pay\/public"
  },
  {
-  "class": "음악 스트리밍",
+  "id": 51,
+  "className": "음악 스트리밍",
   "name": "플로",
   "price": 7900,
-  "img": "flo",
+  "img": "\/img\/items\/flo.png",
   "link": "https:\/\/www.music-flo.com\/purchase\/voucher"
  },
  {
-  "class": "배송 할인, 새벽 배송",
+  "id": 52,
+  "className": "배송 할인, 새벽 배송",
   "name": "로켓와우",
   "price": 4990,
-  "img": "coupangrocket",
+  "img": "\/img\/items\/coupangrocket.png",
   "link": "https:\/\/loyalty.coupang.com\/loyalty\/sign-up\/home"
  },
  {
-  "class": "네이버 관련 서비스",
+  "id": 53,
+  "className": "네이버 관련 서비스",
   "name": "네이버플러스",
   "price": 4900,
-  "img": "naver",
+  "img": "\/img\/items\/naver.png",
   "link": "https:\/\/nid.naver.com\/membership\/join"
  },
  {
-  "class": "렌트 할인권 구독",
+  "id": 54,
+  "className": "렌트 할인권 구독",
   "name": "쏘카패스",
   "price": 4900,
-  "img": "socar",
+  "img": "\/img\/items\/socar.png",
   "link": "https:\/\/blog.socar.kr\/10382"
  },
  {
-  "class": "신세계 할인권 구독",
+  "id": 55,
+  "className": "신세계 할인권 구독",
   "name": "신세계 유니버스 클럽",
   "price": 30000,
-  "img": "gmarket",
+  "img": "\/img\/items\/gmarket.png",
   "link": "https:\/\/club.gmarket.co.kr\/"
- },
+ }
  ],
  "food":[
 	 {
-  "class": "나물 정기 구독",
+  "id": 56,
+  "className": "나물 정기 구독",
   "name": "나물투데이",
   "price": 39600,
-  "img": "namultoday",
+  "img": "\/img\/items\/namultoday.png",
   "link": "https:\/\/namultoday.com\/product\/list.html?cate_no=298"
  },
  {
-  "class": "사무실 스낵 정기 배송",
+  "id": 57,
+  "className": "사무실 스낵 정기 배송",
   "name": "스낵24",
   "price": "x",
-  "img": "snack24",
+  "img": "\/img\/items\/snack24.png",
   "link": "https:\/\/www.wefuncorp.com\/snack"
  },
  {
-  "class": "사무실 스낵 정기 배송",
+  "id": 58,
+  "className": "사무실 스낵 정기 배송",
   "name": "스낵포",
   "price": 69000,
-  "img": "snackfor ",
+  "img": "\/img\/items\/snackfor.png",
   "link": "https:\/\/www.snackfor.com\/"
  },
  {
-  "class": "산삼 정기 배송",
+  "id": 59,
+  "className": "산삼 정기 배송",
   "name": "삼이오",
   "price": 96000,
-  "img": 325,
+  "img": "\/img\/items\/325.png",
   "link": "http:\/\/325.farm\/product\/%EC%82%BC%EC%9D%B4%EC%98%A4-%EC%A0%95-7%EB%85%84%EA%B7%BC-%EC%82%B0%EC%96%91%EC%82%B0%EC%82%BC-%EC%A0%95%EA%B8%B0%EA%B5%AC%EB%8F%85%EC%A0%84%EC%9A%A9\/17\/category\/23\/display\/1\/"
  },
  {
-  "class": "전통주 정기 배송",
+  "id": 60,
+  "className": "전통주 정기 배송",
   "name": "술담화",
   "price": 39000,
-  "img": "sooldamhwa",
+  "img": "\/img\/items\/sooldamhwa.png",
   "link": "https:\/\/www.sooldamhwa.com\/subscribe?damhwabox=basic"
  },
  {
-  "class": "샐러드 정기 배송",
+  "id": 61,
+  "className": "샐러드 정기 배송",
   "name": "프레시코드",
   "price": "x",
-  "img": "freshcode",
+  "img": "\/img\/items\/freshcode.png",
   "link": "https:\/\/freshcode.me\/subscription\/index.html"
  },
  {
-  "class": "와인 정기 배송",
+  "id": 62,
+  "className": "와인 정기 배송",
   "name": "퍼플독",
   "price": 39000,
-  "img": "purpledog",
+  "img": "\/img\/items\/purpledog.png",
   "link": "https:\/\/www.purpledog.co.kr\/subscriptionGuide?tab=01"
  },
  {
-  "class": "원두 정기 배송",
+  "id": 63,
+  "className": "원두 정기 배송",
   "name": "원두데일리",
   "price": "x",
-  "img": "onedodaily",
+  "img": "\/img\/items\/onedodaily.png",
   "link": "https:\/\/www.onedodaily.kr\/"
  },
  {
-  "class": "점심 정기 배송",
+  "id": 64,
+  "className": "점심 정기 배송",
   "name": "위잇딜라이트",
   "price": 6900,
-  "img": "weeatdelight",
+  "img": "\/img\/items\/weeatdelight.png",
   "link": "https:\/\/delight.weeat.kr\/signin"
  },
  {
-  "class": "원두 정기 배송",
+  "id": 65,
+  "className": "원두 정기 배송",
   "name": "빈브라더스",
   "price": "x",
-  "img": "beanbrothers",
+  "img": "\/img\/items\/beanbrothers.png",
   "link": "https:\/\/beanbrothers.co.kr\/goods\/goods_list.php?cateCd=001"
  },
  {
-  "class": "제주 특산품 정기 배송",
+  "id": 66,
+  "className": "제주 특산품 정기 배송",
   "name": "아일랜드박스",
   "price": "x",
-  "img": "iboxjeju",
+  "img": "\/img\/items\/iboxjeju.png",
   "link": "https:\/\/www.iboxjeju.com\/products#annual-product-section"
  },
  {
-  "class": "비건 베이커링 정기 배송",
+  "id": 67,
+  "className": "비건 베이커링 정기 배송",
   "name": "더브레드블루",
   "price": 70000,
-  "img": "thebreadblue",
+  "img": "\/img\/items\/thebreadblue.png",
   "link": "https:\/\/thebreadblue.com\/product\/%EB%8D%94%EB%B8%8C%EB%A0%88%EB%93%9C%EB%B8%94%EB%A3%A8-%EC%A0%95%EA%B8%B0%EB%B0%B0%EC%86%A1\/83\/category\/27\/display\/1\/"
  },
  {
-  "class": "막걸리 정기 배송",
+  "id": 68,
+  "className": "막걸리 정기 배송",
   "name": "홈술닷컴",
   "price": "x",
-  "img": "homesool",
+  "img": "\/img\/items\/homesool.png",
   "link": "https:\/\/homesool.com\/goods\/hs_subscribe.php"
  },
  {
-  "class": "반찬 정기 배송",
+  "id": 69,
+  "className": "반찬 정기 배송",
   "name": "그리팅몰",
   "price": 40000,
-  "img": "greating",
+  "img": "\/img\/items\/greating.png",
   "link": "https:\/\/www.greating.co.kr\/market\/marketList?ctgryId=3279#page1"
  },
  {
-  "class": "전통차 정기 배송",
+  "id": 70,
+  "className": "전통차 정기 배송",
   "name": "다다일상",
   "price": 24900,
-  "img": "dada",
+  "img": "\/img\/items\/dada.png",
   "link": "https:\/\/www.osulloc.com\/kr\/ko\/dlytea\/dada\/homecafe"
  },
  {
-  "class": "유제품, 샐러드 정기 배송",
+  "id": 71,
+  "className": "유제품, 샐러드 정기 배송",
   "name": "프레딧",
   "price": "x",
-  "img": "fredit",
+  "img": "\/img\/items\/fredit.png",
   "link": "https:\/\/m.fredit.co.kr\/exhibition\/fredit\/event-fredit-main-detail?bbmId=1000008955"
  },
  {
-  "class": "과자 정기 구독",
+  "id": 72,
+  "className": "과자 정기 구독",
   "name": "롯데웰푸드 월간과자",
   "price": 9900,
-  "img": "lottesweetmall",
+  "img": "\/img\/items\/lottesweetmall.png",
   "link": "https:\/\/lottesweetmall.com\/product\/detail_subscribe.html?product_no=499"
  }
- ],
+ ]
 }

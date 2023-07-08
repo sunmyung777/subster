@@ -23,7 +23,7 @@ function Food(props){
 			</RadioGroup>
 			<Box display="flex" w="80%" h="80%" flexWrap="wrap" justifyContent='center'>
 			{(props.list).map((item)=>(
-				<Item name={item.name} price={item.price} link={item.link} img={'/img/items/'+item.img+'.png'}/>
+				<Item value={item}/>
 			))}
 			</Box>
 		</VStack>

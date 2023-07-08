@@ -5,21 +5,21 @@ import {useDetailState} from '../context';
 
 function Item(props){
 	const [ ,setDetails ] = useDetailState();
-	const clicked=()=>setDetails(props);
+	const clicked=()=>setDetails(props.value);
 	return <Card maxW='sm' m='1%' minW='sm'>
   <CardBody>
-    <Box w='340px' h='200px' overflow='hidden' display='flex' alignItems='center'><img src={process.env.PUBLIC_URL+props.img} alt='' width='100%' loading='lazy'/></Box>
+    <Box w='340px' h='200px' overflow='hidden' display='flex' alignItems='center'><img src={process.env.PUBLIC_URL+props.value.img} alt='' width='100%' loading='lazy'/></Box>
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>{props.name}</Heading>
+      <Heading size='md'>{props.value.name}</Heading>
       <Text color='#6667AB' fontSize='2xl'>
-        {props.price}원
+        {props.value.price}원
       </Text>
     </Stack>
   </CardBody>
   <Divider />
   <CardFooter>
     <ButtonGroup spacing='2'>
-		<a href={props.link} target='_blank' rel='noreferrer'>
+		<a href={props.value.link} target='_blank' rel='noreferrer'>
       		<Button variant='solid' colorScheme='purple'>
         		사이트로 이동
       		</Button>
