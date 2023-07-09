@@ -24,10 +24,11 @@ function Main(){
 			<Link to='/food'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/food.png'} alt='' boxSize='60px'/><Box fontFamily='Noto Sans' fontWeight='600' fontSize='20px'>식품</Box></VStack></Link>
 			<Link to='/others'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/others.png'} alt=''boxSize='60px'/><Box fontFamily='Noto Sans' fontWeight='600' fontSize='20px'>기타</Box></VStack></Link>
 		</Box>
-		<Box w='900px' fontSize='25px' fontFamily='Noto Sans' fontWeight='600' m='2'>인기</Box>
+		<Box w='900px' fontSize='25px' fontFamily='Noto Sans' fontWeight='600' mb='2'>인기</Box>
 		<Slider img={popular}/>
-		<Box w='900px' fontSize='25px' fontFamily='Noto Sans' fontWeight='600' m='2'>오늘의 발견</Box>
+		<Box w='900px' fontSize='25px' fontFamily='Noto Sans' fontWeight='600' mt='20' mb='2'>오늘의 발견</Box>
 		<Slider img={found}/>
+		<Box h='300px'/>
 	</Box>;
 }
 

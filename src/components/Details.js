@@ -1,7 +1,8 @@
 import React from 'react';
 import {useState} from 'react';
 import {Navigate } from 'react-router-dom';
-import {Box, Slider,SliderMark, SliderTrack,SliderFilledTrack,SliderThumb } from "@chakra-ui/react";
+import {Box, Slider,SliderMark, SliderTrack,SliderFilledTrack,SliderThumb, Button,Card,CardHeader,CardBody,CardFooter } from "@chakra-ui/react";
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 import detailData from '../details';
 
 import {useDetailState} from '../context';
@@ -16,10 +17,11 @@ function Detail(){
 		<Box w='60%' fontSize='40px' fontWeight='bold' mt='30'>{details.name}</Box>
 		<Box w='60%' fontSize='30px' fontWeight='light' mt='1'>{details.class}</Box>
 		<Box w='60%' display='flex' mt='10'>
-			<Box bg='#FAFAFA' w='400px' h='300px' display='flex' alignItems='center' justifyContent='center' borderRadius='20px'>
-				<img src={process.env.PUBLIC_URL+details.img} alt='' width='300px'/>
+			<Box display='flex' alignItems='center' justifyContent='center' flexDirection='column'>
+				<img src={process.env.PUBLIC_URL+details.img} alt='' width='400px' style={{borderRadius: '5%'}}/>
+				<a href={details.link}><Button colorScheme='purple' w='150px' h='30px' variant='solid' mt='5' rightIcon={<ExternalLinkIcon/>}>사이트로 이동</Button></a>
 			</Box>
-			<Box p='1' ml='1%' w='45%' h='300px' display='flex' justifyContent='space-around' flexDirection='column'>
+			<Box p='1' ml='1%' w='45%' display='flex' justifyContent='space-around' flexDirection='column'>
 				{(data.character).map((item)=>(
 				<Box fontSize='20px' fontWeight='light' color='#151515'>✓ {item}</Box>
 			))}
@@ -44,12 +46,25 @@ function Detail(){
 				<SliderThumb />
 			</Slider>
 		</Box>
-		<Box textAlign='center'>
-			{ typeof(data.price)=='string' && data.price}
-			{ typeof(data.price)=='number' && (data.price * (sliderValue-1)) + '원'}
-			{ typeof(data.price)=='object' && typeof(data.price[0].price)=='object' && data.price[0].price[sliderValue-1]+'원'}
-			{ typeof(data.price)=='object' && typeof(data.price[0].price)=='number' && data.price[0].price *(sliderValue)+'원'}
-		</Box>
+		{ typeof(data.price)=='string' && data.price}
+		{ typeof(data.price)=='number' && (data.price * (sliderValue-1)) + '원'}
+		{ typeof(data.price)=='object' ?
+			<Box display='flex'>
+			 {(data.price).map((val)=>(
+				 <Card w='250px' h='250px' m='10' boxShadow='xl'>
+					 <CardHeader bg='#6667AB'>
+						 <Box fontSize='20px' color='#fff'>{val.plan}</Box>
+					 </CardHeader>
+					 <CardBody>
+						 <Box fontSize='15px'>{val.target}</Box>
+					 </CardBody>
+					 <CardFooter justifyContent='center'>
+						 <Box color='#6667AB' fontSize='30px' fontWeight='bold'>{typeof(val.price)=='object' ? val.price[sliderValue-1]+'원' : val.price*sliderValue+'원'}</Box>
+					 </CardFooter>
+				 </Card>
+			 ))}
+		 </Box>
+			:null}
 	</Box>;
 }
 export default Detail;

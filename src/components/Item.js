@@ -6,7 +6,7 @@ import {useDetailState} from '../context';
 function Item(props){
 	const [ ,setDetails ] = useDetailState();
 	const clicked=()=>setDetails(props.value);
-	return <Card maxW='sm' m='1%' minW='sm'>
+	return <Card maxW='sm' m='1%' minW='sm' boxShadow='2xl'>
   <CardBody>
     <Box w='340px' h='200px' overflow='hidden' display='flex' alignItems='center'><img src={process.env.PUBLIC_URL+props.value.img} alt='' width='100%' loading='lazy'/></Box>
     <Stack mt='6' spacing='3'>
