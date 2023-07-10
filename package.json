@@ -18,7 +18,7 @@
     "react-simple-image-slider": "^2.4.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://sunmyung777.github.io/subster/",
+  "homepage": "https://sunmyung777.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

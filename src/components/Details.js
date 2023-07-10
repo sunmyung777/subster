@@ -47,7 +47,6 @@ function Detail(){
 			</Slider>
 		</Box>
 		{ typeof(data.price)=='string' && data.price}
-		{ typeof(data.price)=='number' && (data.price * (sliderValue-1)) + '원'}
 		{ typeof(data.price)=='object' ?
 			<Box display='flex'>
 			 {(data.price).map((val)=>(
