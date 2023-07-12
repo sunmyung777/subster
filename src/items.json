@@ -317,14 +317,6 @@
   "link": "https:\/\/www.bookcrew.net\/shelleyBooks"
  },
  {
-  "id": 40,
-  "className": "에세이 구독",
-  "name": "일간이슬아",
-  "price": 0,
-  "img": "\/img\/items\/sullalee.png",
-  "link": "https:\/\/www.sullalee.com\/dailee-sulla"
- },
- {
   "id": 41,
   "className": "뉴스 구독 상품",
   "name": "뉴닉",
@@ -344,7 +336,7 @@
   "id": 43,
   "className": "뉴스 구독 상품",
   "name": "캐릿",
-  "price": 5500,
+  "price": 8900,
   "img": "\/img\/items\/careet.png",
   "link": "https:\/\/www.careet.net\/Subscribe"
  },
