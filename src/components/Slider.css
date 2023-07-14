@@ -1,0 +1,28 @@
+.rsis-container{
+		max-width:1000px;
+		max-height:500px;
+}
+.rsis-image{
+		max-width:1000px;
+		max-height:500px;
+}
+@media(max-width:800px){
+	.rsis-container{
+		max-width:700px;
+		max-height:350px;
+	}
+	.rsis-image{
+		max-width:700px;
+		max-height:350px;
+	}
+}
+@media(max-width:400px){
+	.rsis-container{
+		max-width:300px;
+		max-height:150px;
+	}
+	.rsis-image{
+		max-width:300px;
+		max-height:150px;
+	}
+}

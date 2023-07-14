@@ -11,6 +11,9 @@ import Category from './pages/Category';
 import {MyProvider} from './context';
 /* eslint-disable */
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
 function App() {
   return (

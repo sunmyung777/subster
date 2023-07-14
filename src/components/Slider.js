@@ -1,10 +1,13 @@
 import React from 'react';
 import SimpleImageSlider from "react-simple-image-slider";
-import { Box } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react';
+import useResizeObserver from "use-resize-observer";
+
 function Slider(props){
-	return <Box boxShadow='2xl'><SimpleImageSlider
-		width={1000}
-		height={500}
+	const { ref, width = 1, height = 1 } = useResizeObserver();
+	return <Box boxShadow='2xl' ref={ref} w={{ base: '100%', md: '100%', lg:'1000px'}} h={{ base: '200px', md: '350px', lg:'500px'}}><SimpleImageSlider
+		width={width}
+		height={height}
 		images={props.img}
 		showBullets={true}
 		showNavs={true}

@@ -6,14 +6,14 @@ import Item from '../components/Item';
 function Category(props){
 	return(
 		<VStack>
-			<Box display='flex' justifyContent='space-around' m='5' w='800px'>
-				<Link to='/ott'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/ott.png'} alt='' boxSize='50px'/><Box fontFamily='Noto Sans' fontWeight='600' fontSize='15px'>OTT</Box></VStack></Link>
-				<Link to='/life'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/life.png'} alt='' boxSize='50px'/><Box fontFamily='Noto Sans' fontWeight='600' fontSize='15px'>생활</Box></VStack></Link>
-				<Link to='/book'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/book.png'} alt='' boxSize='50px'/><Box fontFamily='Noto Sans' fontWeight='600' fontSize='15px'>도서</Box></VStack></Link>
-				<Link to='/food'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/food.png'} alt='' boxSize='50px'/><Box fontFamily='Noto Sans' fontWeight='600' fontSize='15px'>식품</Box></VStack></Link>
-				<Link to='/others'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/others.png'} alt=''boxSize='50px'/><Box fontFamily='Noto Sans' fontWeight='600' fontSize='15px'>기타</Box></VStack></Link>
+			<Box display='flex' justifyContent='space-around' mt='5' mb='5' w={{ base: '350px', md: '600px',lg:'800px'}}>
+				<Link to='/ott'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/ott.png'} alt='' boxSize={{ base: '30px', md: '50px'}}/><Box fontFamily='Noto Sans' fontWeight='600' fontSize= '15px'>OTT</Box></VStack></Link>
+				<Link to='/life'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/life.png'} alt='' boxSize={{ base: '30px', md: '50px'}}/><Box fontFamily='Noto Sans' fontWeight='600' fontSize= '15px'>생활</Box></VStack></Link>
+				<Link to='/book'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/book.png'} alt='' boxSize={{ base: '30px', md: '50px'}}/><Box fontFamily='Noto Sans' fontWeight='600' fontSize= '15px'>도서</Box></VStack></Link>
+				<Link to='/food'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/food.png'} alt='' boxSize={{ base: '30px', md: '50px'}}/><Box fontFamily='Noto Sans' fontWeight='600' fontSize= '15px'>식품</Box></VStack></Link>
+				<Link to='/others'><VStack><Image src={process.env.PUBLIC_URL+'/img/categories/others.png'} alt=''boxSize={{ base: '30px', md: '50px'}}/><Box fontFamily='Noto Sans' fontWeight='600' fontSize='15px'>기타</Box></VStack></Link>
 			</Box>
-			<Box display="flex" w="80%" h="80%" flexWrap="wrap" justifyContent='center'>
+			<Box display="flex" w={{ base: '100%', lg: '80%'}} flexWrap="wrap" justifyContent='center' mb='10'>
 			{(props.list).map((item)=>(
 				<Item value={item}/>
 			))}

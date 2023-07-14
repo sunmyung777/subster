@@ -423,14 +423,6 @@
   "link": "https:\/\/nid.naver.com\/membership\/join"
  },
  {
-  "id": 54,
-  "className": "렌트 할인권 구독",
-  "name": "쏘카패스",
-  "price": 4900,
-  "img": "\/img\/items\/socar.png",
-  "link": "https:\/\/blog.socar.kr\/10382"
- },
- {
   "id": 55,
   "className": "신세계 할인권 구독",
   "name": "신세계 유니버스 클럽",
@@ -559,14 +551,6 @@
   "price": 24900,
   "img": "\/img\/items\/dada.png",
   "link": "https:\/\/www.osulloc.com\/kr\/ko\/dlytea\/dada\/homecafe"
- },
- {
-  "id": 71,
-  "className": "유제품, 샐러드 정기 배송",
-  "name": "프레딧",
-  "price": "x",
-  "img": "\/img\/items\/fredit.png",
-  "link": "https:\/\/m.fredit.co.kr\/exhibition\/fredit\/event-fredit-main-detail?bbmId=1000008955"
  },
  {
   "id": 72,
