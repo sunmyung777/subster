@@ -4,7 +4,7 @@
   "id": 1,
   "className": "남성 생활 용품",
   "name": "와이즐리",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/wisely.png",
   "link": "http:\/\/wisely.wiselycompany.com\/product\/list.html?cate_no=100"
  },
@@ -12,7 +12,7 @@
   "id": 2,
   "className": "면도기 정기 배송",
   "name": "레이지 소사이어티",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/lazysociety.png",
   "link": "https:\/\/lazysociety.co.kr\/"
  },
@@ -20,7 +20,7 @@
   "id": 3,
   "className": "여성용품 정기 배송",
   "name": "해피문데이",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/happymoonday.png",
   "link": "https:\/\/happymoonday.com\/"
  },
@@ -84,7 +84,7 @@
   "id": 11,
   "className": "영양제 정기 구독",
   "name": "필리",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/pilly.png",
   "link": "https:\/\/pilly.kr\/store\/hotdeal\/all"
  },
@@ -116,7 +116,7 @@
   "id": 15,
   "className": "가구 구독",
   "name": "살구",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/thesalgu.png",
   "link": "https:\/\/thesalgu.com\/shop\/product-shop?mainCategoryName=%EC%86%8C%ED%8C%8C&sorting=%EC%9D%B8%EA%B8%B0%EC%88%9C"
  },
@@ -140,7 +140,7 @@
   "id": 18,
   "className": "중고차 정기 구독",
   "name": "트라이브",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/thetrive.png",
   "link": "https:\/\/thetrive.com\/"
  },
@@ -148,7 +148,7 @@
   "id": 19,
   "className": "물품 정기배송",
   "name": "이마트몰",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/emart.png",
   "link": "https:\/\/emart.ssg.com\/service\/emart\/dvstore.ssg"
  },
@@ -156,7 +156,7 @@
   "id": 20,
   "className": "자동차 구독",
   "name": "현대 셀렉션",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/hyundai.png",
   "link": "https:\/\/www.hyundai.com\/kr\/ko\/digital-customer-support\/app\/hyundai-selection\/hyundai-selection-information"
  },
@@ -164,7 +164,7 @@
   "id": 21,
   "className": "자동차 구독",
   "name": "기아 플렉스",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/kia.png",
   "link": "https:\/\/www.kia.com\/kr\/buy\/rent-used-car\/flex"
  }
@@ -320,7 +320,7 @@
   "id": 41,
   "className": "뉴스 구독 상품",
   "name": "뉴닉",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/newneek.png",
   "link": "https:\/\/newneek.co\/"
  },
@@ -328,7 +328,7 @@
   "id": 42,
   "className": "뉴스 구독 상품",
   "name": "머니레터",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/uppity.png",
   "link": "https:\/\/uppity.co.kr\/"
  },
@@ -444,7 +444,7 @@
   "id": 57,
   "className": "사무실 스낵 정기 배송",
   "name": "스낵24",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/snack24.png",
   "link": "https:\/\/www.wefuncorp.com\/snack"
  },
@@ -476,7 +476,7 @@
   "id": 61,
   "className": "샐러드 정기 배송",
   "name": "프레시코드",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/freshcode.png",
   "link": "https:\/\/freshcode.me\/subscription\/index.html"
  },
@@ -492,7 +492,7 @@
   "id": 63,
   "className": "원두 정기 배송",
   "name": "원두데일리",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/onedodaily.png",
   "link": "https:\/\/www.onedodaily.kr\/"
  },
@@ -508,7 +508,7 @@
   "id": 65,
   "className": "원두 정기 배송",
   "name": "빈브라더스",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/beanbrothers.png",
   "link": "https:\/\/beanbrothers.co.kr\/goods\/goods_list.php?cateCd=001"
  },
@@ -516,7 +516,7 @@
   "id": 66,
   "className": "제주 특산품 정기 배송",
   "name": "아일랜드박스",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/iboxjeju.png",
   "link": "https:\/\/www.iboxjeju.com\/products#annual-product-section"
  },
@@ -532,7 +532,7 @@
   "id": 68,
   "className": "막걸리 정기 배송",
   "name": "홈술닷컴",
-  "price": "x",
+  "price": "물품 별 가격 상이",
   "img": "\/img\/items\/homesool.png",
   "link": "https:\/\/homesool.com\/goods\/hs_subscribe.php"
  },

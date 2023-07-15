@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Item from '../components/Item';
 
 function Category(props){
+	 window.scrollTo(0, 0);
 	return(
 		<VStack>
 			<Box display='flex' justifyContent='space-around' mt='5' mb='5' w={{ base: '350px', md: '600px',lg:'800px'}}>

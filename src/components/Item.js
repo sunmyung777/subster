@@ -12,7 +12,8 @@ function Item(props){
     <Stack mt='6' spacing='3'>
       <Heading size='md'>{props.value.name}</Heading>
       <Text color='#6667AB' fontSize='24px'>
-        {props.value.price}원
+        {typeof(props.value.price)=='number' && props.value.price+'원'}
+		{typeof(props.value.price)=='string' && props.value.price}
       </Text>
     </Stack>
   </CardBody>

@@ -7,6 +7,7 @@ import detailData from '../details';
 
 import {useDetailState} from '../context';
 function Detail(){
+	 window.scrollTo(0, 0);
 	const [details]=useDetailState();
 	const [sliderValue, setSliderValue] = useState(1);
 	const data=detailData[details.id];
@@ -27,7 +28,8 @@ function Detail(){
 			))}
 			</Box>
 		</Box>
-		<Box w={{ base: '80%', md: '60%'}} mt={{ base: '10', md: '0'}} mb='5' fontSize='30px' fontWeight='bold'>가격</Box>
+		<Box w={{ base: '80%', md: '60%'}} mt='10' mb={{ base: '1', md: '5'}} fontSize='30px' fontWeight='bold'>가격</Box>
+		<Box w={{ base: '80%', md: '60%'}} mb='10' fontSize={{ base: '13px', md: '20px'}}>스크롤을 통해 구독 기간의 비용을 예상해 보세요!</Box>
 		<Box p='2'w={{ base: '80%', md: '40%'}} display='flex' alignItems='center' border='1px solid #BDBDBD' borderRadius='5px'>
 			<Slider onChange={(val) => setSliderValue(val)} defaultValue={1} min={1} max={12} step={1}>
 				<SliderMark
@@ -36,7 +38,7 @@ function Detail(){
   	      	  bg='#6667AB'
   	      	  color='#E6E6E6'
   	      	  mt='-10'
-  	      	  ml='-5'
+  	      	  ml='-10'
   	      	  w='20'>
 					{sliderValue}개월
 				</SliderMark>
@@ -46,7 +48,9 @@ function Detail(){
 				<SliderThumb />
 			</Slider>
 		</Box>
-		{ typeof(data.price)=='string' && data.price}
+		{ typeof(data.price)=='string' && 
+			<Box mt='10' mb='20'fontWeight='bold' fontSize='30px'>{data.price}</Box>
+		}
 		{ typeof(data.price)=='object' ?
 			<Box display='flex' flexDirection={{ base: 'column', md: 'row'}}>
 			 {(data.price).map((val)=>(
@@ -56,7 +60,7 @@ function Detail(){
 					 </CardHeader>
 					 <CardBody>
 						 <Box fontSize='15px'>{val.target}</Box>
-						 <Box color='#6667AB' fontSize='30px' fontWeight='bold' position='absolute' bottom='5px' left='60px'>{typeof(val.price)=='object' ? val.price[sliderValue-1]+'원' : val.price*sliderValue+'원'}</Box>
+						 <Box color='#6667AB' fontSize='30px' fontWeight='bold' position='absolute' bottom='5px' w='210px' textAlign='center'>{typeof(val.price)=='object' ? val.price[sliderValue-1]+'원' : val.price*sliderValue+'원'}</Box>
 					 </CardBody>
 				 </Card>
 			 ))}
