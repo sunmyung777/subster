@@ -19,7 +19,7 @@ function Detail(){
 		<Box w={{ base: '80%', md: '60%'}} fontSize='20px' fontWeight='light' mt='1'>{details.className}</Box>
 		<Box w={{ base: '80%', md: '60%'}} display='flex' mt='10' flexDirection={{ base: 'column', md: 'row'}}>
 			<Box display='flex' alignItems='center' justifyContent='center' flexDirection='column'>
-				<img src={process.env.PUBLIC_URL+details.img} alt='' width='400px' style={{borderRadius: '5%'}}/>
+				<img src={process.env.PUBLIC_URL+details.img} alt='details' width='400px' style={{borderRadius: '5%'}}/>
 				<a href={details.link}><Button colorScheme='purple' w='150px' h='50px' variant='solid' mt='5' rightIcon={<ExternalLinkIcon/>}>사이트로 이동</Button></a>
 			</Box>
 			<Box p='1' ml={{ base: '0', md: '2'}} mt={{ base: '2', md: '0'}} w={{ base: '300px', md: '400px'}} display='flex' justifyContent='space-around' flexDirection='column'>
