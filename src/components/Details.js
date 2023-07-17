@@ -1,19 +1,24 @@
 import React from 'react';
-import {useState} from 'react';
-import {Navigate } from 'react-router-dom';
+import {useState, useEffect} from 'react';
+import { useParams } from 'react-router-dom';
 import {Box, Slider,SliderMark, SliderTrack,SliderFilledTrack,SliderThumb, Button,Card,CardHeader,CardBody } from "@chakra-ui/react";
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import detailData from '../details';
+import itemData from '../items';
 
-import {useDetailState} from '../context';
 function Detail(){
-	 window.scrollTo(0, 0);
-	const [details]=useDetailState();
+	const { id,category } = useParams();
+	let details={};
+	itemData[category].map( temp => {
+		if(temp.id===parseInt(id))
+			details=JSON.parse(JSON.stringify(temp));;
+	});
 	const [sliderValue, setSliderValue] = useState(1);
-	const data=detailData[details.id];
-	if(Object.entries(details).toString()===''){
-		return <Navigate replace to='/'/>
-	}
+	const data=detailData[id];
+	useEffect(()=>{
+		window.scrollTo(0, 0);
+	},[]);
+	
 	return <Box w='100%' bg='#E6E6E6' display='flex' alignItems='center' flexDirection='column' fontFamily='Noto Sans'>
 		<Box w={{ base: '80%', md: '60%'}} fontSize='40px' fontWeight='bold' mt='30'>{details.name}</Box>
 		<Box w={{ base: '80%', md: '60%'}} fontSize='20px' fontWeight='light' mt='1'>{details.className}</Box>

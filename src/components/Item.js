@@ -1,11 +1,9 @@
 import React from 'react';
 import { Box,Card, CardBody, CardFooter, Text, Stack, Heading, Divider, ButtonGroup, Button} from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
-import {useDetailState} from '../context';
+import { Link,useLocation  } from 'react-router-dom';
 
 function Item(props){
-	const [ ,setDetails ] = useDetailState();
-	const clicked=()=>setDetails(props.value);
+	const location=useLocation();
 	return <Card w='370px' m={{ base: '2', md: '5'}} boxShadow='2xl'>
   <CardBody>
     <Box w='340px' h='200px' overflow='hidden' display='flex' alignItems='center'><img src={process.env.PUBLIC_URL+props.value.img} alt='' width='100%' loading='lazy'/></Box>
@@ -25,8 +23,8 @@ function Item(props){
         		사이트로 이동
       		</Button>
 		</a>
-      <Button variant='ghost' colorScheme='purple' onClick={clicked} fontSize='16px' w='132px'>
-        <Link to='/details'>상세보기</Link>
+      <Button variant='ghost' colorScheme='purple' fontSize='16px' w='132px'>
+        <Link to={location.pathname+'/details/'+props.value.id}>상세보기</Link>
       </Button>
     </ButtonGroup>
   </CardFooter>
