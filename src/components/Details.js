@@ -1,35 +1,53 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
-import { useParams } from 'react-router-dom';
-import {Box, Slider,SliderMark, SliderTrack,SliderFilledTrack,SliderThumb, Button,Card,CardHeader,CardBody } from "@chakra-ui/react";
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { useParams, Navigate } from 'react-router-dom';
+import {Box,Image, Slider,SliderMark, SliderTrack,SliderFilledTrack,SliderThumb, Button,Card,CardHeader,CardBody,extendTheme } from "@chakra-ui/react";
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import detailData from '../details';
 import itemData from '../items';
+import Notion from './Notion';
+
+const breakpoints = {
+  sm: '375px',
+  md: '414px',
+  lg: '820px',
+  xl: '1024px',
+  '2xl': '1920px',
+}
+const theme = extendTheme({ breakpoints });
 
 function Detail(){
-	const { id,category } = useParams();
-	let details={};
-	itemData[category].map( temp => {
-		if(temp.id===parseInt(id))
-			details=JSON.parse(JSON.stringify(temp));;
-	});
 	const [sliderValue, setSliderValue] = useState(1);
-	const data=detailData[id];
 	useEffect(()=>{
 		window.scrollTo(0, 0);
 	},[]);
-	
-	return <Box w='100%' bg='#E6E6E6' display='flex' alignItems='center' flexDirection='column' fontFamily='Noto Sans'>
-		<Box w={{ base: '80%', md: '60%'}} fontSize='40px' fontWeight='bold' mt='30'>{details.name}</Box>
-		<Box w={{ base: '80%', md: '60%'}} fontSize='20px' fontWeight='light' mt='1'>{details.className}</Box>
-		<Box w={{ base: '80%', md: '60%'}} display='flex' mt='10' flexDirection={{ base: 'column', md: 'row'}}>
+	var check=false;
+	var details={};
+	const { id } = useParams();
+	for(var i in itemData){
+		for(var j of itemData[i]){
+			if(j['id']==id){
+				check=true;
+				details=j;
+				break;
+			}
+		}
+	}
+	if(!check){
+		return <Navigate to='/'/>;
+	}
+	const data=detailData[id];
+	return <Box w='100%' display='flex' alignItems='center' flexDirection='column' fontFamily='Noto Sans'>
+		<Box w={{ base: '80%', xl: '60%'}} fontSize={{ base: '30px', lg: '40px'}} fontWeight='bold' mt='30' mt={{ base: '80px', md: '120px'}}>{details.name}</Box>
+		<Box w={{ base: '80%', xl: '60%'}} fontSize='20px' fontWeight='light' mt='1'>{details.className}</Box>
+		<Box w={{ base: '80%',md:'95%', xl: '60%'}} display='flex' mt='10' flexDirection={{ base: 'column', md: 'row'}}>
 			<Box display='flex' alignItems='center' justifyContent='center' flexDirection='column'>
-				<img src={process.env.PUBLIC_URL+details.img} alt='details' width='400px' style={{borderRadius: '5%'}}/>
+				<Image src={process.env.PUBLIC_URL+details.img} alt='details' boxSize='400px' boxShadow='2xl' fit='contain'/>
 				<a href={details.link}><Button colorScheme='purple' w='150px' h='50px' variant='solid' mt='5' rightIcon={<ExternalLinkIcon/>}>사이트로 이동</Button></a>
 			</Box>
-			<Box p='1' ml={{ base: '0', md: '2'}} mt={{ base: '2', md: '0'}} w={{ base: '300px', md: '400px'}} display='flex' justifyContent='space-around' flexDirection='column'>
+			<Box p='1' ml={{ base: '0', md: '10'}} mt={{ base: '2', md: '0'}} w={{ base: '300px', md: '600px'}} display='flex' justifyContent='space-around' flexDirection='column'>
 				{(data.character).map((item)=>(
-				<Box fontSize={{ base: '15px', md: '20px'}} fontWeight='bold' color='#151515' mt={{ base: '2', md: '0'}}>✓ {item}</Box>
+				<Box fontSize={{ base: '15px', md: '20px'}} fontWeight='bold' color='#151515' mt={{ base: '2', md: '0'}}>{item}</Box>
 			))}
 			</Box>
 		</Box>
@@ -57,20 +75,21 @@ function Detail(){
 			<Box mt='10' mb='20'fontWeight='bold' fontSize='30px'>{data.price}</Box>
 		}
 		{ typeof(data.price)=='object' ?
-			<Box display='flex' flexDirection={{ base: 'column', md: 'row'}}>
+			<Box display='flex' flexDirection={{ base: 'column', md: 'row'}} w='100%' flexWrap='wrap' alignItems='center' justifyContent='center'>
 			 {(data.price).map((val)=>(
-				 <Card w='250px' h='250px' m={{ base: '2', lg: '10'}} boxShadow='xl'>
+				 <Card w={{ base:'300px', lg: '250px'}} h='250px' m={{ base: '2', xl: '10'}} boxShadow='xl'>
 					 <CardHeader bg='#6667AB'>
 						 <Box fontSize='20px' color='#fff'>{val.plan}</Box>
 					 </CardHeader>
 					 <CardBody>
 						 <Box fontSize='15px'>{val.target}</Box>
-						 <Box color='#6667AB' fontSize='30px' fontWeight='bold' position='absolute' bottom='5px' w='210px' textAlign='center'>{typeof(val.price)=='object' ? val.price[sliderValue-1]+'원' : val.price*sliderValue+'원'}</Box>
+						 <Box color='#6667AB' fontSize='30px' fontWeight='bold' position='absolute' bottom='5px'>{typeof(val.price)=='object' ? val.price[sliderValue-1]+'원' : val.price*sliderValue+'원'}</Box>
 					 </CardBody>
 				 </Card>
 			 ))}
 		 </Box>
 			:null}
+		<Box w={{ base:'300px',md:'800px', lg: '800px'}}><Notion id={data['id']}/></Box>
 	</Box>;
 }
 export default Detail;

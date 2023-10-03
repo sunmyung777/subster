@@ -1,28 +1,39 @@
-.rsis-container{
-		max-width:1000px;
-		max-height:500px;
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
 }
-.rsis-image{
-		max-width:1000px;
-		max-height:500px;
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
 }
-@media(max-width:800px){
-	.rsis-container{
-		max-width:700px;
-		max-height:350px;
-	}
-	.rsis-image{
-		max-width:700px;
-		max-height:350px;
-	}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
 }
-@media(max-width:400px){
-	.rsis-container{
-		max-width:300px;
-		max-height:150px;
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+@media (max-width: 414px) {
+	.left-arrow{
+		left:5px;
 	}
-	.rsis-image{
-		max-width:300px;
-		max-height:150px;
+	.right-arrow{
+		right:5px;
 	}
 }

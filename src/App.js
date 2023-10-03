@@ -1,13 +1,13 @@
 import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import itemData from './items';
+import { ChakraProvider } from '@chakra-ui/react';
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Details from './components/Details';
 import Main from './pages/Main';
 import Category from './pages/Category';
+import Search from './pages/Search';
 /* eslint-disable */
 
 window.onbeforeunload = function () {
@@ -17,15 +17,17 @@ window.onbeforeunload = function () {
 function App() {
   return (
     <ChakraProvider>
-		<Router>
-			 <Nav/>
-			 <Routes>
-				  <Route exact path='/' element={<Main />} />
-				  <Route path='/:category' element={<Category/>} />
-				 <Route path=':category/details/:id' element={<Details/>}/>
-			 </Routes>
-		</Router>
-		<Footer/>
+			<Router>
+				 <Nav/>
+				 <Routes>
+					  <Route exact path='/' element={<Main />} />
+					 <Route path='/category/:category' element={<Category/>} />
+					 <Route path='/:id' element={<Details/>}/>
+					 <Route path='/search/:search' element={<Search/>}/>
+					 <Route path='/*' element={<Navigate to='/' />} />
+				 </Routes>
+			</Router>
+			<Footer/>
 	</ChakraProvider>
   );
 }
